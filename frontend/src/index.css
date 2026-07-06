@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap');
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: 248 250 252;
+    --bg-card: 255 255 255;
+    --accent-blue: 37 99 235;
+    --accent-teal: 20 184 166;
+    --accent-sky: 14 165 233;
+    --text-primary: 15 23 42;
+    --text-secondary: 100 116 139;
+    --border-color: 226 232 240;
+  }
+
+  * {
+    border-color: rgb(226 232 240);
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(248 250 252);
+    color: rgb(15 23 42);
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Inter', sans-serif;
+  }
+
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    opacity: 0.5;
+  }
+
+  select option {
+    background-color: white;
+    color: rgb(15 23 42);
+  }
+}
+
+@media print {
+  /* Hide sidebar and navigation */
+  aside, nav, header {
+    display: none !important;
+  }
+  
+  /* Hide the buttons on the dashboard header */
+  button, a[href^="/destination/"], a[href^="/plan"] {
+    display: none !important;
+  }
+
+  /* Make main content take full width */
+  main {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+
+  /* Print background colors properly */
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  
+  /* Avoid breaking cards across pages */
+  .bg-white {
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}

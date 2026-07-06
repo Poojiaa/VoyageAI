@@ -1,0 +1,27 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables
+.env
+**/.env
+
+# Virtual environments
+venv/
+.venv/
+
+# Vector database
+backend/chroma_data/
+
+# SQLite database
+*.db
+
+# Node modules
+node_modules/
+
+# Build folders
+dist/
+build/
+
+# Logs
+*.log

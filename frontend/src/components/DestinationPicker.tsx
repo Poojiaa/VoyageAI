@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
-import { Target, Loader2, Share2, ArrowRight, CloudSun, Plane, Hotel, Star, MapPin, Bus, Utensils, CheckCircle2 } from 'lucide-react';
+import { Target, Loader2, Plane, Hotel, Star, MapPin, Bus, Utensils, CheckCircle2 } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 interface Destination {
@@ -32,7 +32,6 @@ interface Props {
 }
 
 const DestinationPicker: React.FC<Props> = ({ destinations, onSelect, isLoading }) => {
-  const [otherDestination, setOtherDestination] = useState('');
   const navigate = useNavigate();
 
   return (

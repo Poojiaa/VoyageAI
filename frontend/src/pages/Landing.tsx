@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Globe, Plane, ArrowRight, Star, MapPin, Brain, RefreshCw, FileText, Share2, Search } from 'lucide-react';
+import { Globe, ArrowRight, Star, Brain, RefreshCw, FileText, Share2 } from 'lucide-react';
 
 const POPULAR_SEARCHES = ['Bali', 'Switzerland', 'Thailand', 'Dubai', 'Singapore'];
 
@@ -32,7 +32,7 @@ const Landing = () => {
   const navigate = useNavigate();
   const [from, setFrom] = React.useState('Delhi, India');
   const [to, setTo] = React.useState('');
-  const [travelers, setTravelers] = React.useState('2 Adults');
+  const [travelers] = React.useState('2 Adults');
 
   return (
     <div className="flex flex-col">

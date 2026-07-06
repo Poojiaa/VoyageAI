@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { MapPin, CloudSun, Star, Heart, Share2, ArrowRight, CheckCircle, Loader2, Plane, Shield, FileText, AlertTriangle } from 'lucide-react';

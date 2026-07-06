@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Sparkles, MapPin, Calendar, DollarSign, Users, ChevronDown, Globe, ThermometerSun } from 'lucide-react';
 import DestinationPicker from '../components/DestinationPicker';
